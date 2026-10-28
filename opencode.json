@@ -1,0 +1,23 @@
+
+ {
+  "$schema": "https://opencode.ai/config.json",
+  "tools": {
+    "mysql_*": true
+  },
+  "permission": {
+    "mysql_*": "allow"
+  },
+  "mcp": {
+    "servers": {
+      "dart": {
+        "type": "local",
+        "command": [
+          "dart",
+          "mcp-server"
+        ],
+        "cwd": ".",
+        "enabled": true
+      }
+    }
+  }
+}
